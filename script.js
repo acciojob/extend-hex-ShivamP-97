@@ -1,5 +1,13 @@
 const extendHex = (shortHex) => {
-  // write your code here
+	let hex=shortHex.replace(/^#/,"");
+
+	let fullHex=hex
+	.split("")
+    .map(c=>c+c)
+    .join("");
+
+	return "#"+fullHex.toUpperCase();
+
 };
 
 // Do not change the code below.
